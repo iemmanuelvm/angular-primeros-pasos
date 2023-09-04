@@ -1,0 +1,15 @@
+<h1>BDZ Main Page</h1>
+<hr>
+<!-- la asignacion de los class vienen desde el boostrap -->
+<div class="row">
+  <div class="col">
+    <dbz-list
+    [characterList]="characters"
+    (onDelete)="onDeleteCharater($event)"></dbz-list>
+  </div>
+
+  <div class="col">
+    <dbz-dd-character (onNewCharacter)="onNewCharacter($event)"></dbz-dd-character>
+  </div>
+
+</div>
